@@ -1,75 +1,4 @@
 
-/*
-    1.
-   records = result.record | []; // Ensures that if record is missing in the response, records defaults to an empty array.
-            
-   2.
-   
-   throw new Error('Response Error');
-            vs
-   return Error('Response Error');   
-
-   Summary
-Use throw new Error(...) in try...catch blocks to handle errors properly. This will interrupt the function and ensure errors are caught in a catch block.
-Avoid using return Error(...) if you want to handle errors with try...catch, as it simply returns an Error object without actually throwing it, which doesn’t trigger any catch block and requires manual checking of the returned value.
-
-   3. 
-
-   getApps()
-.then(records => console.log(records))
-.catch(error => console.error('Error:', error.message));
- vs
-
- async function initializeData() {
-    x = await getApps();
-}
-initializeData().then(() => {
-  
-    console.log(x); // You can log it or access elements whenever needed
-    console.log(x[0]); // Access the first element, for example
-});
-
-
-
-
-
-function processData() {
-    try {
-        throw new Error("Something went wrong!"); // This error is thrown
-    } catch (error) {
-        console.log("Caught error:", error.message); // Catch block catches the error
-        // Optional: re-throw the error if you want it handled elsewhere
-        throw error; // This would pass the error to the outer scope
-    }
-}
-
-// Calling processData
-try {
-    processData();
-} catch (error) {
-    console.log("Handled error outside processData:", error.message); // Catches re-thrown error
-}
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-
-
-
-// add each record to an Application class
-class Application {
-
-}
-
 
 
 // add finally 
@@ -99,21 +28,6 @@ async function getApps() {
 
     return records
 }
-
-// let allApps = [];
-// async function fetchApps() {
-//     try {
-//         allApps = await getApps(); 
-//     } catch (error) {
-//         console.error("Error fetching apps:", error);
-//     }
-// }
-
-
-
-// fetchApps();
-
-// getApps() is it good to call it on the flow like that?
 
 getApps()
     .then((records) => {
