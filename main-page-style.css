@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+::selection{
+    background-color: #3e97d6;
+    color: #242525;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    color: #616161;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* -------------------------------------------------Navigation Bar------------------------------------------------- */
+
+.navbar-container {
+    height: 80px;
+    /* static measures can cause problems */
+    padding: 10px;
+    box-shadow: 15px 6px 20px 1px #E3F2FD;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+    height: 85%;
+    /* background-color: green; */
+}
+
+.logo {
+    border-radius: 5%;
+}
+
+.left-nav-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+    /* background-color: violet; */
+}
+.left-nav-logo span::first-letter{
+    font-weight: bold;
+    color: #3e97d6;
+    font-size: 30px;
+}
+
+.left-nav-links {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: blue; */
+}
+
+.left-nav-links li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.left-nav-links li:hover {
+    background-color: #E3F2FD;
+    transition: 1s;
+}
+
+.right-nav-actions {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* background-color: yellow; */
+}
+
+.right-nav-actions span {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.right-nav-actions span:hover {
+    background-color: #E3F2FD;
+    transition: 1s;
+}
+
+/*Ask chat gpt if the upper nav bar is good + think how to make the logo bigger a little bit */
+/* Add icons */
+
+
+/* -------------------------------------------------Body------------------------------------------------- */
+
+/* When static elements added to the cards(images) it stopped bieng responsive */
+
+.main-page-content {
+    width: 80%;
+    height: 1650px;
+    /* static measures can cause problems */
+    margin: 50px auto;
+
+    /* background-color: blue; */
+}
+
+.apps-grid-container {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    height: 85%;
+
+    /* background-color: green; */
+}
+
+.card {
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px #242525;
+    transition: 0.5s;
+    cursor: pointer;
+
+    /* background-color: yellow; */
+}
+
+.card:hover {
+    border: 3px solid #3e97d6;
+    transform: translate(0px, -6px);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+/* -------------------------------------------------Footer------------------------------------------------- */
+
+
+.footer{
+    text-align: center;
+}

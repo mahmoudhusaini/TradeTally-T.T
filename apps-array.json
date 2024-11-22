@@ -1,0 +1,51 @@
+[
+    {
+        "id": 11,
+        "name": "TradeTally",
+        "abbreviation": "T.T",
+        "description": "A handy tool for calculating trade costs, duties, and tariffs in seconds. Tailored for importers and exporters, it simplifies complex calculations, ensuring accuracy and efficiency. Stay informed on costs and make smarter trade decisions with ease.",
+        "imgpath": "images/mini-import-export.jpg"
+    },
+    {
+        "id": 12,
+        "name": "BlinkBill",
+        "abbreviation": "B.B",
+        "description": "A compact app designed to streamline invoice creation for small businesses and freelancers. With an intuitive interface, it allows you to quickly generate professional invoices in just a few steps. Simplify your billing process and stay organized with ease.",
+        "imgpath": "images/mini-invoice-writer.jpg"
+    },
+    {
+        "id": 13,
+        "name": "NumNation",
+        "abbreviation": "N.N",
+        "description": "A quick, intuitive calculator app designed for effortless number crunching on the go. Simple, fast, and reliable for all your calculations.",
+        "imgpath": "images/mini-calculator.jpg"
+    },
+    {
+        "id": 21,
+        "name": "FolioForge",
+        "abbreviation": "F.F",
+        "description": "Lets you build sleek, personalized portfolios to showcase your work and skills effortlessly. Perfect for making a lasting impression.",
+        "imgpath": "images/mini-portfolio-builder.jpg"
+    },
+    {
+        "id": 22,
+        "name": "SpeakSync",
+        "abbreviation": "S.S",
+        "description": "SpeakSync is a comprehensive tool for speech therapists to organize and track client sessions effortlessly. From scheduling and note-taking to monitoring client progress, this app keeps all essential details in one accessible place, making it easier to stay organized and focused on effective therapy.",
+        "imgpath": "images/mini-speech-therapy.jpg"
+    },
+    {
+        "id": 23,
+        "name": "CraftCove",
+        "abbreviation": "C.C",
+        "description": "Your destination for all things home improvement! Whether you need tiles, knobs, faucets, or paint, CraftCove offers quality products to help you craft the perfect space. Explore and create with ease!",
+        "imgpath": "images/mini-e-commerce.jpg"
+    },
+    {
+        "id": 24,
+        "name": "DineDeck",
+        "abbreviation": "D.D",
+        "description": "Streamline your restaurant’s operations effortlessly! From managing orders to tracking inventory, DineDeck provides all the tools you need to serve your customers with ease. Keep your kitchen and service running smoothly, all in one app!",
+        "imgpath": "images/mini-DineDeck.jpg"
+    }
+]
