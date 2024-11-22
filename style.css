@@ -21,22 +21,6 @@ body {
 
 /* -----------------------------------------------fixed-values-option--------------------------------------------------- */
 
-/* width: This is the most common property for specifying the width of an input. You can use percentage values, px, em, or rem units depending on the desired 
-responsiveness. */
-/*  */
-/* Example: width: 100%; makes the input fill its container’s width. */
-/* max-width: This is useful for responsive designs, allowing an input to grow only up to a certain width, even if it’s set to width: 100%. */
-/*  */
-/* Example: width: 100%; max-width: 300px; ensures the input fills the container but won’t exceed 300px. */
-/* min-width: This is helpful to maintain usability by preventing the input from becoming too narrow on smaller screens. */
-/*  */
-/* Example: min-width: 150px; keeps the input at least 150px wide even when the container shrinks. */
-/* flex-basis (within a Flexbox layout) and grid-template-columns (within a CSS Grid layout): These are optimal when inputs are part of a flex or grid layout, 
-respectively. */
-/*  */
-/* Example (Flexbox): flex-basis: 25%; makes each input take up 25% of the row within a flex container. */
-/* Example (Grid): grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); in a CSS Grid layout allows inputs to automatically adjust based on 
-the available space, ensuring each takes at least 150px. */
 
 .fixed-values-option {
     margin: 80px 100px;
@@ -57,41 +41,6 @@ the available space, ensuring each takes at least 150px. */
     align-items: baseline;
     gap: 15px;
 }
-
-
-
-
-
-
-
-
-/* 
-
-    Height on .trade-tally-main-container:
-
-I removed the height property to allow the container to dynamically adjust its height based on the number of fields and their content.
- This approach is more flexible, especially if fields might be added or removed in the future. A fixed height could lead to layout issues, such as content
-  overflow or excessive empty space. However, if a consistent height is required for design purposes, you can set a specific min-height instead to maintain
-  some flexibility while ensuring a baseline height.
-
-
-  2. Dynamic Width for .field-holder:
-
-Instead of setting a fixed width, you can use Flexbox to distribute the space dynamically across all .field-holder elements. Using flex: 1 within Flexbox distributes
-each field evenly without hardcoding widths. Alternatively, if you want each field to take up, say, 25% of the row, you could use CSS Grid with grid-template-columns
-set to repeat(auto-fit, minmax(150px, 1fr)), which makes each field responsive and automatically adjusts its width based on available space.
-
-*/
-
-/* .add-new-btn{
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: 1px #3e97d6 solid;
-    background-color: #b6c3cb;
-    color: #f9f9f9;
-    cursor: pointer;
-    margin-bottom: 40px;
-} */
 
 
 /* -----------------------------------------------Fixed Vals Input Fields(Weight Charge & Money Trans)--------------------------------------------------- */
@@ -129,20 +78,7 @@ set to repeat(auto-fit, minmax(150px, 1fr)), which makes each field responsive a
 
 /* ------------------------------------------------------------------------------MEDIA QUERIES---------------------------------------------------------------------- */
 /* Media query for smaller screens */
-/* @media (max-width: 768px) { */
-/* .product-row { */
-/* display: block;  Stack all fields vertically */
-/* } */
 
-/* .field-holder { */
-/* width: 100%;  Ensure field holders take full width */
-/*margin-bottom: 10px;  Add some spacing between fields */
-/* } */
-
-/* .field-holder label { */
-/* font-size: 12px;  Make labels slightly smaller on mobile */
-/* } */
-/* } */
 
 /* ---------------------------------------------------------------Container for: Button/Table/Line Total/---------------------------------------------------------------------- */
 
@@ -152,9 +88,6 @@ set to repeat(auto-fit, minmax(150px, 1fr)), which makes each field responsive a
   margin: 80px auto;
 
 }
-
-
-
 
 /* ------------------------------------------------------------------------------ADD NEW BTN---------------------------------------------------------------------- */
 
