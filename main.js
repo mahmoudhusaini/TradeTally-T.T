@@ -5,7 +5,7 @@
 // add apps in an array
 
 async function getApps() {
-    const url = `apps-array`;
+    const url = `apps-array.json`;
 
     let records = [];
 
