@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+::selection {
+    background-color: #3e97d6;
+    color: #242525;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    color: #616161;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* -----------------------------------------------fixed-values-option--------------------------------------------------- */
+
+/* width: This is the most common property for specifying the width of an input. You can use percentage values, px, em, or rem units depending on the desired 
+responsiveness. */
+/*  */
+/* Example: width: 100%; makes the input fill its container’s width. */
+/* max-width: This is useful for responsive designs, allowing an input to grow only up to a certain width, even if it’s set to width: 100%. */
+/*  */
+/* Example: width: 100%; max-width: 300px; ensures the input fills the container but won’t exceed 300px. */
+/* min-width: This is helpful to maintain usability by preventing the input from becoming too narrow on smaller screens. */
+/*  */
+/* Example: min-width: 150px; keeps the input at least 150px wide even when the container shrinks. */
+/* flex-basis (within a Flexbox layout) and grid-template-columns (within a CSS Grid layout): These are optimal when inputs are part of a flex or grid layout, 
+respectively. */
+/*  */
+/* Example (Flexbox): flex-basis: 25%; makes each input take up 25% of the row within a flex container. */
+/* Example (Grid): grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); in a CSS Grid layout allows inputs to automatically adjust based on 
+the available space, ensuring each takes at least 150px. */
+
+.fixed-values-option {
+    margin: 80px 100px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.fixed-values-option div {
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+/* 
+
+    Height on .trade-tally-main-container:
+
+I removed the height property to allow the container to dynamically adjust its height based on the number of fields and their content.
+ This approach is more flexible, especially if fields might be added or removed in the future. A fixed height could lead to layout issues, such as content
+  overflow or excessive empty space. However, if a consistent height is required for design purposes, you can set a specific min-height instead to maintain
+  some flexibility while ensuring a baseline height.
+
+
+  2. Dynamic Width for .field-holder:
+
+Instead of setting a fixed width, you can use Flexbox to distribute the space dynamically across all .field-holder elements. Using flex: 1 within Flexbox distributes
+each field evenly without hardcoding widths. Alternatively, if you want each field to take up, say, 25% of the row, you could use CSS Grid with grid-template-columns
+set to repeat(auto-fit, minmax(150px, 1fr)), which makes each field responsive and automatically adjusts its width based on available space.
+
+*/
+
+/* .add-new-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px #3e97d6 solid;
+    background-color: #b6c3cb;
+    color: #f9f9f9;
+    cursor: pointer;
+    margin-bottom: 40px;
+} */
+
+
+/* -----------------------------------------------Fixed Vals Input Fields(Weight Charge & Money Trans)--------------------------------------------------- */
+
+.input-valid {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.input-valid:focus,
+.input-valid:focus {
+    box-shadow: 0 2px 4px #3e97d6;
+}
+
+.input-danger {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid red;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+
+
+/* ------------------------------------------------------------------------------MEDIA QUERIES---------------------------------------------------------------------- */
+/* Media query for smaller screens */
+/* @media (max-width: 768px) { */
+/* .product-row { */
+/* display: block;  Stack all fields vertically */
+/* } */
+
+/* .field-holder { */
+/* width: 100%;  Ensure field holders take full width */
+/*margin-bottom: 10px;  Add some spacing between fields */
+/* } */
+
+/* .field-holder label { */
+/* font-size: 12px;  Make labels slightly smaller on mobile */
+/* } */
+/* } */
+
+/* ---------------------------------------------------------------Container for: Button/Table/Line Total/---------------------------------------------------------------------- */
+
+
+.container{
+  width: 90%;
+  margin: 80px auto;
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ADD NEW BTN---------------------------------------------------------------------- */
+
+.add-new-btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3e97d6;
+    /* Soft blue color */
+    color: #fff;
+    /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+}
+
+/* Hover effect for button */
+.add-new-btn:hover {
+    background-color: #2e7db4;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+/* Focus effect (when button is focused) */
+
+/* Active state (when button is clicked) */
+.add-new-btn:active {
+    background-color: #255f8e;
+    /* Even darker blue when pressed */
+    transform: translateY(1px);
+    /* Slight indentation effect */
+}
+
+/* ------------------------------------------------------------------------------Responsive Table---------------------------------------------------------------------- */
+
+/* Table container for responsiveness */
+.responsive-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensure table doesn't shrink too much */
+}
+
+.responsive-table thead {
+  background-color: #3e97d6;
+  color: #fff;
+}
+
+.responsive-table th,
+.responsive-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.responsive-table th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.responsive-table td input {
+  width: 90%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.responsive-table td input:focus {
+  border-color: #3e97d6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .bbc {
+  width: 90%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #e74c3c;
+  outline: none;
+  font-size: 14px;
+}
+
+.bbc:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 2px 4px rgba(232, 101, 101, 0.1);
+} */
+
+.responsive-table .delete-btn {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.responsive-table .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+
+
+.responsive-table .reset-btn {
+  padding: 8px 15px;
+  background-color:  #615c5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.responsive-table .reset-btn:hover {
+  background-color: #616161;
+}
+
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .responsive-table td input {
+    width: 100%;
+  }
+}
+
+
+
+
+/* ------------------------------------------------------------------------------Line Total Container ----------------------------------------------------------------------*/
+.line-total-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: start;
+  align-items: flex-start; /* Align items to the start of the container */
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Total Label */
+.line-total-container .total-label {
+  font-size: 16px;
+  color: #3e97d6;
+}
+
+/* Total Value */
+.line-total-container .total-value {
+  font-size: 18px;
+  color: #e74c3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .line-total-container {
+    justify-content: center; /* Center total for smaller screens */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+  }
+
+  .line-total-container .total-value {
+    font-size: 16px;
+    color: #333;
+  }
+}
