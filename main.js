@@ -5,7 +5,7 @@
 // add apps in an array
 
 async function getApps() {
-    const url = `https://api.jsonbin.io/v3/qs/6735f17aacd3cb34a8a88664`;
+    const url = `apps-array`;
 
     let records = [];
 
