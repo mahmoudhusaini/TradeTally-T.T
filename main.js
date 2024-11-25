@@ -69,7 +69,7 @@ getApps()
 function navigateToApp(identifier) {
     switch (identifier) {
         case 'identifier-T.T':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/TradeTally/TradeTally.html', '_blank');
+            window.open(./TradeTally.html);
             break;
         case 'identifier-B.B':
             window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/BlinkBill/BlinkBill.html', '_blank');
