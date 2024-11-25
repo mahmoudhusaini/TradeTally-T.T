@@ -72,24 +72,24 @@ function navigateToApp(identifier) {
             window.open(./TradeTally.html);
             break;
         case 'identifier-B.B':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/BlinkBill/BlinkBill.html', '_blank');
+            // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/BlinkBill/BlinkBill.html', '_blank');
             break;
 
         case 'identifier-N.N':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/NumNation/NumNation.html', '_blank');
+            // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/NumNation/NumNation.html', '_blank');
             break;
         case 'identifier-F.F':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/FolioForge/FolioForge.html', '_blank');
+            // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/FolioForge/FolioForge.html', '_blank');
             break;
         case 'identifier-S.S':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/SpeakSync/SpeakSync.html', '_blank');
+           // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/SpeakSync/SpeakSync.html', '_blank');
             break;
 
         case 'identifier-C.C':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/CraftCove/CraftCove.html', '_blank');
+           // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/CraftCove/CraftCove.html', '_blank');
             break;
         case 'identifier-D.D':
-            window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/DineDeck/DineDeck.html', '_blank');
+            // window.open('file:///C:/Users/lbmah/Documents/v/Dell/VS%20Code%20Projects%20CSS/JavaScript/Practices/Import%20Export%20Products/DineDeck/DineDeck.html', '_blank');
             break;
         default:
             break;
